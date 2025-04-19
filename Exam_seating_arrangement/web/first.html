@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+ body {
+                background-position: center;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color:white; /* Optional background color */
+            }
+
+            /* Splash image styles */
+            #splash {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 900px; /* Set the max width of the image */
+                max-height: 900px; /* Set the max height of the image */
+                width: auto;  /* Allow the width to adjust automatically */
+                height: auto; /* Allow the height to adjust automatically */
+                object-fit: contain; /* Keep the image's aspect ratio */
+                z-index: 9999;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Added ID 'splash' to the image for easy targeting -->
+        <img id="splash" src="images/splash.jpg" alt="Splash Image">
+
+        <script>
+            // JavaScript to hide the splash and redirect to the start.html page after a delay
+            window.onload = function() {
+                setTimeout(function() {
+                    // Hide the splash image after 2 seconds (2000ms)
+                    document.getElementById('splash').style.display = 'none'; 
+                    // Redirect to start.html
+                    window.location.href = 'start.html'; 
+                }, 5000); // Show splash for 2 seconds (2000ms)
+            };
+        </script>
+    </body>
+</html>

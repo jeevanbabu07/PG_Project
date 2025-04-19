@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="Stu_Del_Up.css"/>
+    </head>
+    <body>
+        <div id="update">
+        <form action="update_stu" method="post" id="up_form">
+            <label>Class:</label><input type="text" id="update_class" name="update_class" placeholder="Enter the Class Name" required/><br><br>
+            <label>Reg_no:</label><input type="text" id="u_regno" name="u_regno" placeholder="Enter the Register Number" required/><br><br>
+            <label>Name:</label><input type="text" id="u_name" name="u_name" placeholder="Enter the Name" required/><br><br>
+            <label>DOB:</label><input type="date" id="u_dob" name="u_dob" required /><br><br>
+            <button value="submit" id="details2_button">Update</button>
+        </form>
+    </div>
+               
+    <div id="delete_rec">
+        <form action="delete_stu" method="post">
+             <label>className </label><input type="text" id="delete_cls" name="delete_cls" placeholder="Enter the class Name" ><br><br>
+             <label>RegNO </label><input type="text" id="delete_reg" name="delete_reg" placeholder="Enter the register Number" ><br><br>
+             <button value="submit" id="details2_button">delete</button>
+        </form>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Main container for the form */
+#class_subject {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+/* Input and select fields styling */
+input[type="text"], select {
+    padding: 8px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+/* Label styles */
+label {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Subject input field styling */
+#subjectForm input[type="text"] {
+    width: calc(100% - 16px);
+    margin: 5px 0 15px 0;
+}
+
+/* Add spacing between elements */
+br {
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #class_subject {
+        width: 90%;
+    }
+}

@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  background: #F0F8FF; 
+}
+
+
+#heading {
+  text-align: center;
+  font-size: 30px;
+  color:white; 
+  text-decoration: underline;
+  height: 85px;
+  font-family: emoji;
+ background:#002349;
+ margin-top: -50px;
+ padding:20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background:#002349;
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul li {
+  margin-right: 30px;
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #8e54e9;
+  
+  text-align: center;
+  padding: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color:white; 
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+ul li a i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+ul li a i {
+  font-size: 20px;
+}
+
+#al{
+   position: absolute;
+      top: 0;
+      right: 0;
+      margin: 50px;
+      font-size: 20px;
+      padding:2px;
+      font-size:20px;
+      color:white;
+}
+.fa-user-tie {
+  font-size: 20px;
+  margin: 8px;
+}
+#al button{
+    margin-right: 10px;
+}
+.sub_lin {
+    display: flex;
+    justify-content: center;
+    background-color:#681a1e;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 100%;
+    top: 0;
+}
+
+.sub_lin a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 14px 85px;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+   
+    
+}
+
+.sub_lin a:hover {
+    background-color: #F0F8FF;
+    color: black;
+    font-family: italic;
+}
+
+#student a{
+     background-color: #F0F8FF;
+    color: black;
+    font-family: italic;
+}
+
+.hidden {
+    display: none;
+}
+#logout {
+    padding: 7px;
+    margin:10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+#logout:hover {
+    background-color: #45a049;
+        text-decoration: underline;
+}
+
+table{
+    width:1300px;
+    transform: translatex(7%);
+}
+#ts{
+    text-decoration: underline;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: italic;
+}
+#r{
+    background-color: #002349; 
+    color: white;
+    padding: 12px 15px; 
+    text-align: center; 
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #8e54e9;
+    font-family: italic;
+  }
+#c{
+   background-color: #002349;
+    color: white; 
+    padding: 12px 15px; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #8e54e9;
+    font-family: italic;
+  }
+  #room{
+      text-decoration: underline;
+      font-size: 27px;
+      font-weight: bold;
+      font-family: italic;
+  }
+#c1{
+    border:0px;
+}
+#data{
+    font-family: italic;
+    font-size:20px;
+}
+#sub{
+     padding: 10px;
+    margin:20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:bold;
+    transform: translatex(625%);
+    width:190px;
+    font-size: 17px;
+}
+#sub:hover{
+     background-color: #45a049;
+        text-decoration: underline;
+}
+#pre{
+     padding: 10px;
+    margin:20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:bold;
+    width:190px;
+    font-size: 17px;
+    transform:translatey(-210%);
+}
+#pre:hover{
+     background-color: #45a049;
+     text-decoration: underline;
+}
+#ds{
+     padding: 10px;
+    margin:20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:bold;
+    width:190px;
+    font-size: 17px;
+    transform:translatey(-210%);
+}
+#a {
+  color: #a393eb; /* Set text color */
+  position: relative;
+}
+
+#a::before {
+  content: '';
+  background: #a393eb; /* Set underline color */
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%; /* Make underline full width */
+  height: 3px;
+}
+
+#a i {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 22px; /* Adjust icon size */
+}

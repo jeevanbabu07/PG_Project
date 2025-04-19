@@ -1,0 +1,31 @@
+#t1 {
+    width: 80%; /* Set the table width to 80% of the container */
+    margin: 20px auto; /* Center the table horizontally */
+     /* Set a clean font */
+    background-color: #f9f9f9; /* Light background color */
+    margin-left: 50px;
+}
+
+/* Style the table header */
+#t3 {
+    background-color: #002349; /* Green background for header */
+    color: white; /* White text */
+    padding: 12px 15px; /* Padding for cells */
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Slightly larger text */
+    font-weight: bold;
+    text-shadow: 0 0 15px #8e54e9;
+}
+
+/* Style the table cells */
+#t4 {
+    padding: 8px; /* Padding for cells */
+    text-align: center; /* Center the text in cells */
+    border: 1px solid #ddd; /* Add a light border to each cell */
+    font-size: 17px; /* Slightly smaller text for data */
+    
+}
+#t5{
+    font-family:italic;
+    font-size:18px;
+}

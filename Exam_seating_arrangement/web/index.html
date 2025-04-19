@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Data Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1 id="heading"><b>Exam Seating Arrangements</b></h1>
+     <div id="navigation">
+         <ul>
+     <div id="al">       
+        <h3><i class="fa-solid fa-user-tie"></i>ADMIN</h3>
+        <button id="logout">LOGOUT</button>
+     </div>
+      <br />
+      <li id="student_list">
+        <a id="a"><i class="fa-solid fa-graduation-cap"></i><i>Student List</i></a>
+      </li>
+      <li id="subject_list">
+        <a><i class="fa-solid fa-book-open"></i><i>Subject</i></a>
+      </li>
+      <li id="manage_list">
+        <a><i class="fa-solid fa-person-shelter"></i><i>Manage Rooms</i></a>
+      </li>
+      <li id="final">
+        <a><i class="fa-solid fa-note-sticky"></i><i>Arrangements</i></a>
+      </li>
+    </ul>
+   </div>
+    <div class="sub_lin">
+          <div id="student">
+            <a href="index.html">CLASS</a>
+        </div>
+        <div id="insert">
+            <a href="insert_stude.html">INSERT</a>
+        </div>
+        <div id="subject_upd">
+            <a href="subj_upd.html">Subject Update</a>
+        </div>
+        </div>
+
+     
+    <div id="class_data">
+        <div id="get_val"></div>
+        <br>
+        <div id="selected_data">
+            <iframe src="stu_up_del.html" class="frame"></iframe>
+        </div>
+        
+    </div>
+    <script>
+        window.onload = function() {
+            
+            fetch('/Exam_seating_arrangement/display_data')
+                .then(response => response.text())
+                .then(htmlContent => {
+                    document.getElementById('get_val').innerHTML = htmlContent;
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+
+            
+            document.querySelectorAll('input[name="selectedClasses"]').forEach(checkbox => {
+                checkbox.addEventListener('change', updateSelectedClasses);
+            });
+        };
+
+        
+        function submitForm(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+
+            
+            const params = new URLSearchParams();
+            for (const pair of formData.entries()) {
+                params.append(pair[0], pair[1]);
+            }
+
+            fetch('/Exam_seating_arrangement/display_data', {
+                method: 'POST',
+                body: params,
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+                .then(response => response.text())
+                .then(htmlContent => {
+                    document.getElementById('selected_data').innerHTML = htmlContent;
+                })
+                .catch(error => {
+                    console.error('Error submitting form:', error);
+                });
+        }
+
+      
+        // Add an event listener to the button
+        document.getElementById("logout").addEventListener("click", function() {
+            // Redirect to another page
+            window.location.href = "start.html";
+        });
+    </script>
+</body>
+</html>

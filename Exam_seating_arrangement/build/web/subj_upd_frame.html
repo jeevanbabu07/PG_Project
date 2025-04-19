@@ -1,0 +1,54 @@
+
+<html>
+    <head>
+        <title>Insert Class</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function createSubjectInputs() {
+            var numSubjects = document.getElementById("subject").value;
+            var form = document.getElementById("subjectForm");
+            form.innerHTML = ""; // Clear any existing inputs
+
+            for (var i = 1; i <= numSubjects; i++) {
+                var label = document.createElement("label");
+                label.textContent = "Subject " + i + ":";
+                form.appendChild(label);
+
+                var input = document.createElement("input");
+                input.type = "text";
+                input.id = "subject_" + i;
+                input.name = "subject_" + i;
+                input.required = true; // Make input mandatory
+                form.appendChild(input);
+
+                form.appendChild(document.createElement("br"));
+                form.appendChild(document.createElement("br"));
+            }
+        }
+        </script>
+        <link rel="stylesheet" href="Insert_Stude_Class.css">
+    </head>
+    <body>
+       <div id="class_subject">
+    <form action="subject_up" method="post">
+        <label>Class:</label>
+        <input type="text" id="class" name="class" placeholder="Enter the class Name" required /><br><br>
+        <label>Number of Subjects:</label>
+        <select id="subject" name="subject" onchange="createSubjectInputs()" required>
+            <option value="">Select number of subjects</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        
+        <div id="subjectForm"></div><br>
+         <button type="submit" name="formType" value="classForm">Submit</button>
+    </form>
+        </div>
+    </body>
+</html>

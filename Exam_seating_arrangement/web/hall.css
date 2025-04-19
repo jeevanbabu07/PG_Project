@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  background: #F0F8FF;
+  
+}
+
+#heading {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-decoration: underline;
+  height: 85px;
+  font-family: emoji;
+  background: #002349;
+  margin-top: -50px;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background: #002349;
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul li {
+  margin-right: 30px;
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #8e54e9;
+  text-align: center;
+  padding: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+ul li a i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+#al {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px;
+  font-size: 20px;
+  padding: 2px;
+  font-size: 20px;
+  color: white;
+}
+
+#t1 {
+  width: 30%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  margin-left: 20px;
+}
+
+#t3 {
+  background-color: #002349;
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 15px #8e54e9;
+  font-family: italic;
+}
+
+#t4 {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 17px;
+  font-family: italic;
+}
+
+span {
+  font-size: 23px;
+  font-family: italic;
+  margin: 6px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: italic;
+  margin: 16px;
+}
+
+#logout {
+  padding: 7px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#logout:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+}
+
+#delete {
+  margin-left: 370px;
+  transform: translatey(140%);
+  padding: 7px;
+  width: 100px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#delete:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+}
+
+#bs {
+  transform: translatey(10%);
+  margin-left: 3px;
+}
+#rt {
+  margin-left: 20px;
+}
+
+
+#rt3 {
+  background-color: #002349;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 15px #8e54e9;
+  font-family: italic;
+}
+
+#rt4 {
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 17px;
+  font-family: italic;
+  background: #f9f9f9;
+}
+
+#hall {
+  transform: translatey(80%);
+  margin-left: 25px;
+}
+
+#insert {
+  padding: 7px;
+  width: 80px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#insert:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+}
+
+#previous {
+  padding: 7px;
+  width: 160px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transform: translatey(400%);
+  margin-left: 23px;
+  font-size:17px;
+}
+
+#previous:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+}
+
+#submit {
+   padding: 10px;
+  width: 120px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transform: translatey(238%);
+  margin-left: 1300px;
+  font-size:17px;
+  
+}
+
+#submit:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+}
+
+/* Hide the default checkbox */
+input[type='checkbox'] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+input[type='checkbox']:hover {
+  border-color: #888;
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.6);
+  transform: scale(1.05);
+}
+
+input[type='checkbox']:checked {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+input[type='checkbox']:checked:hover {
+  background-color: #45a049;
+  box-shadow: 0 0 5px black;
+}
+
+#a {
+  color: #a393eb;
+  position: relative;
+}
+
+#a::before {
+  content: '';
+  background: #a393eb;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+#a i {
+  margin-right: 10px;
+  font-size: 22px;
+}

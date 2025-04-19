@@ -1,0 +1,58 @@
+#details2_button{
+    width: 100%;
+    padding: 10px;
+    background-color:#4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight:bold;
+}
+
+
+#details2_button:hover {
+    background-color: #45a049;
+    text-decoration: underline;
+}
+
+
+#update {
+    margin-right: 20px;
+    height:570px;
+    border: 10px solid white;
+}
+#up_form{
+    transform: translateY(25%);
+}
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+ #update, #delete_rec {
+    width: 300px; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+#update{
+    margin-top:-120px;
+}
+
+label {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+#delete_rec{
+    width:320px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Seating Arrangements</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <style>
+        body {
+            background-image: url("images/login2.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #outside{
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(4px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 15px black;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border: 4px solid black;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-family: serif;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+
+        a:focus {
+            outline: none;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            height: 150px;
+            font-family: Garamond;
+            font-size: 60px;
+            text-decoration: underline;
+            color: #fcfefe;
+            text-shadow: 0 0 10px #8e54e9;
+        }
+
+        #inside{
+            height: 25px;
+        }
+
+        .fa-user-tie {
+            margin-right: 8px; /* Adjust the value for desired spacing */
+        }
+
+        .fa-graduation-cap {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outside">
+        <h1>Exam Seating Arrangements</h1>
+        <div id="inside">
+            <a href="admin_login.html" target="_self"><i class="fa-solid fa-user-tie"></i>ADMIN</a>
+            <a href="student"><i class="fa-solid fa-graduation-cap"></i>STUDENT</a>
+        </div>
+    </div>
+</body>
+</html>
